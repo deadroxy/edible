@@ -7,7 +7,7 @@ class GamesController < ApplicationController
   def create
     @game = Game.new
   
-    @game.new_game_set
+    @game.new_game_set!
     
     if @game.save
     else
