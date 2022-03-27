@@ -6,7 +6,7 @@ class GamesController < ApplicationController
   end
 
   def create
-    @game = Game.new
+    @game = Game.new(started_at: Time.now)
     @game.new_game_set!
     
     if @game.save
@@ -21,11 +21,15 @@ class GamesController < ApplicationController
   def show
     if @game.responses.length == 30
       # Stop playing and show results
-    end
-    
+    end  
   end
   
   def update
+    # Stop timer if it's the final response
+    if params[:r].to_i == 29
+      @game.finished_at = Time.now
+    end
+    
     # Record response to current round
     @game.responses << params[:game][:response]
     

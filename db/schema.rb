@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_27_054244) do
+ActiveRecord::Schema.define(version: 2022_03_27_065127) do
 
   create_table "games", charset: "utf8mb4", collation: "utf8mb4_unicode_520_ci", force: :cascade do |t|
     t.string "emojis"
@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 2022_03_27_054244) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "responses"
+    t.datetime "started_at"
+    t.datetime "finished_at"
   end
 
 end
