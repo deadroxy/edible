@@ -1,27 +1,32 @@
 class GamesController < ApplicationController
 
-  before_action :find_game, only: [ :show, :update ]
+  before_action :find_game, only: [ :show, :update, :add_name ]
 
   def index
+    @leaders = Game.ranked.limit(5)
   end
 
   def create
     @game = Game.new(started_at: Time.now)
-    @game.new_game_set!
+    @game.new_game_set
     
     if @game.save
       # Show game to allow user to start playing
       redirect_to game_path(@game, params: { r: 0 })
     else
       # TODO: add an error message
-      render(action: :index) 
+      render(action: :index)
     end
   end
   
   def show
+    # Show result after the final response
     if @game.responses.length == 30
-      # Stop playing and show results
-    end  
+      @game.calculate_score!
+      @game.calculate_duration!
+      @rank = Game.ranked.pluck(:id).index(@game.id) + 1
+      render action: "show_result"
+    end
   end
   
   def update
@@ -31,15 +36,25 @@ class GamesController < ApplicationController
     end
     
     # Record response to current round
-    @game.responses << params[:game][:response]
+    unless params[:game][:response].nil?
+      @game.responses << params[:game][:response]
+    end
     
     if @game.save
       # Show next round
       redirect_to game_path(@game, params: { r: params[:r].to_i+1 })
     else
       # TODO: add an error message
-      render(action: :index) 
+      render(action: :index)
     end
+  end
+  
+  def add_name
+    # Add the user's name to the finished game if they entered one
+    if !game_params[:name].empty?
+      @game.update(game_params)
+    end
+    redirect_to games_path
   end
   
   protected
@@ -51,7 +66,7 @@ class GamesController < ApplicationController
     
   private
     def game_params
-      params.require(:game).permit(:response)
+      params.require(:game).permit(:response, :name)
     end
     
 end

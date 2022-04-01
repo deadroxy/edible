@@ -1,0 +1,3 @@
+<div class="record-row <%= cycle "odd", "even", name: "row-cycler" %> flexbox vertical stretch">
+  <%= game.name.nil? ? '???' : game.name  %> <%= game.score %> (<%= game.duration %> seconds)
+</div>
