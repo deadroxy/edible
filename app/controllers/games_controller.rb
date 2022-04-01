@@ -36,8 +36,8 @@ class GamesController < ApplicationController
     end
     
     # Record response to current round
-    unless params[:game][:response].nil?
-      @game.responses << params[:game][:response]
+    unless game_params[:response].nil?
+      @game.responses << game_params[:response]
     end
     
     if @game.save
@@ -50,7 +50,7 @@ class GamesController < ApplicationController
   end
   
   def add_name
-    # Add the user's name to the finished game if they entered one
+    # Add the user's name to the finished game if they enter one
     if !game_params[:name].empty?
       @game.update(game_params)
     end
