@@ -3,7 +3,7 @@
     <div class="rank"><%= game_counter+1 %></div>
     <div class="name"><%= game.name.nil? ? '???' : game.name %></div>
   </div>
-  <div class="score-info flexbox vertical end flex-1">
+  <div class="score-duration flexbox vertical end flex-1">
     <%= game.score %> points, <%= number_with_precision(game.duration, precision: 4) %> secs.
   </div>
 </div>

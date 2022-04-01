@@ -6,7 +6,7 @@
   font-size: 1em;
   font-style: italic;
   color: var(--gray-color);
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .button {
@@ -22,7 +22,7 @@
   white-space: normal;
   text-align: center;
   line-height: 1.4em;
-  margin: 0em 1em 4em 1em;
+  margin: 1em 1em 4em 1em;
 }
 
 .button:hover {
@@ -38,13 +38,22 @@
   outline: none;
 }
 
+#game_play_yes.button {
+  width: 5em;
+}
+
+#game_play_no.button {
+  width: 5em;
+}
+
 #game_start.button {
 
 }
 
 .leaderboard {
   max-width: 40em;
-  width: 100%; 
+  width: 100%;
+  margin-bottom: 4em;
 }
 
 .leaderboard .record-row .rank {
@@ -57,11 +66,48 @@
   font-weight: 500;
 }
 
-.leaderboard .record-row .score-info {
+.leaderboard .record-row .score-duration {
   font-family: var(--info-font);
 }
 
-
 .playable-emoji {
   font-size: 8em;
+  margin-top: 0.5em;
+}
+
+.results .score {
+  font-family: var(--title-font);
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.results .duration {
+  font-family: var(--info-font);
+  font-size: 1em;
+  color: var(--gray-color);
+}
+
+form#add-name {
+  margin-top: 3em;
+}
+
+form#add-name label.text-field {
+  line-height: 1.4em;
+  text-align: center;
+  margin-bottom: 2em;
+  max-width: 20em;
+}
+
+form#add-name input.text-field {
+  color: var(--black-color);
+  background: var(--white-color);
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: 1.3em;
+  border: 5px solid var(--light-black-color);
+  outline: none;
+  padding: 0.8em 1em 0.7em 1em;
+  width: 13em;
+  text-align: center;
+  margin-bottom: 0.5em;
 }

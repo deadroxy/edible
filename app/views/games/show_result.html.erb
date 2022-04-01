@@ -1,24 +1,21 @@
 <div class="page-section flexbox vertical stretch">
   <div class="section-inner flexbox vertical stretch">
-    <div class="section-title">
-      Results!
+    <div class="section-title flexbox vertical center">
+      Score
     </div>  
-    <div class="flexbox vertical stretch">
-      Score: <%= @game.score %>/30<br>
-      Time: <%= @game.duration %><br>
-      Rank: <%= @rank %>
+    <div class="results flexbox vertical center">
+      <div class="score"><%= @game.score %>/30</div>
+      <div class="duration"><%= @game.duration %> secs.</div>
     </div>
-    <div class="flexbox vertical stretch">
-      <form action="<%= add_name_game_path(@game) %>" id="game_update_name" method="POST" enctype="multipart/form-data" class="flexbox vertical start">
+    <div class="flexbox vertical center">
+      <form action="<%= add_name_game_path(@game) %>" id="add-name" method="POST" enctype="multipart/form-data" class="flexbox vertical center">
         <div style="hidden">
           <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
           <input name="_method" type="hidden" value="patch" />
         </div>
-        <div>
-          <label for="name" class="text-field">Add your name to the leaderboard</label>
-          <input id="game_name" name="game[name]" class="text-field" type="text" value="<%= @game.name %>" autocomplete="off" tabindex="1">
-        </div> 
-        <input id="game_update_name_submit" name="commit" type="submit" class="button" value="Add" tabindex="2">
+        <label for="name" class="text-field">Enter your name to claim your <%= @rank.ordinalize %> place spot the leaderboard</label>
+        <input name="game[name]" class="text-field" type="text" value="<%= @game.name %>" autocomplete="off" tabindex="1">
+        <input id="game_add_name" name="commit" type="submit" class="button" value="Enter" tabindex="2">
       </form>
     </div>
 	</div>
