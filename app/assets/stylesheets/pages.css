@@ -20,6 +20,13 @@
   margin-bottom: 1em;
 }
 
+.page-section .subsection-title {
+  font-family: var(--title-font);
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
 .record-row {
   padding: 0.5em 1.25em 0.5em 1.25em;
   font-size: 0.85em;
@@ -46,7 +53,12 @@
 
   .page-section .section-title {
     font-size: 1.5em;
-    margin-bottom: .6em;
+    margin-bottom: 0.6em;
   }
-
+  
+  .page-section .subsection-title {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+  }
+  
 }

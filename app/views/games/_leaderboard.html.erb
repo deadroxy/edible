@@ -1,12 +1,14 @@
-<div class="flexbox vertical stretch">
-  <div class="">
-    Leaderboard!
+<div class=" flexbox vertical center">
+  <div class="leaderboard flexbox vertical stretch">
+  <div class="subsection-title flexbox vertical center">
+    Leaderboard
   </div>
   <% if @leaders.present? %>
     <%= render(partial: "games/row", collection: @leaders, as: :game) %>
   <% else %>
-  <div class="empty">
+  <div class="empty flexbox vertical center">
     No leaders yet.
   </div>
   <% end %>
+  </div>
 </div>

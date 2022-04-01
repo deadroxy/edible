@@ -1,14 +1,17 @@
 <div class="page-section flexbox vertical stretch">
   <div class="section-inner flexbox vertical stretch">
-    <div class="section-title">
-      Edible Game!
-    </div>  
-    <div class="flexbox vertical stretch">
-      <form action="<%= games_path %>" id="game_start" method="POST" enctype="multipart/form-data" class="flexbox vertical start">
+    <div class="section-title flexbox vertical center">
+      Is it Edible?
+    </div>
+    <div class="intro-prompt flexbox vertical center">
+      Here we give a quick description of how the game works.
+    </div>
+    <div class="flexbox vertical center">
+      <form action="<%= games_path %>" method="POST" enctype="multipart/form-data" class="flexbox vertical start">
         <div style="hidden">
           <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
         </div>
-        <input id="game_start_submit" name="commit" type="submit" class="button" value="Start" tabindex="1">
+        <input id="game_start" name="commit" type="submit" class="button" value="Start" tabindex="1">
       </form>
     </div>
     <%= render(partial: "games/leaderboard") %>

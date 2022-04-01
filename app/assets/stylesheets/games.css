@@ -1,4 +1,67 @@
-/*
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
-*/
+/************************************/
+/*          Element Styles          */
+/************************************/
+
+.intro-prompt {
+  font-size: 1em;
+  font-style: italic;
+  color: var(--gray-color);
+  margin-bottom: 3em;
+}
+
+.button {
+  border: 5px solid var(--black-color);
+  background-color: var(--light-black-color);
+  color: var(--white-color);
+  font-family: var(--title-font);
+  font-weight: 500;
+  font-size: 1.6em;
+  padding: .4em .75em .45em .75em;
+  text-transform: uppercase;
+  max-width: 10em;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.4em;
+  margin: 0em 1em 4em 1em;
+}
+
+.button:hover {
+  cursor: pointer;
+  border: 5px solid var(--light-black-color);
+  background-color: var(--gray-color);
+}
+
+.button:active {
+  cursor: pointer;
+  border: 5px solid var(--gray-color);
+  background-color: var(--light-gray-color);
+  outline: none;
+}
+
+#game_start.button {
+
+}
+
+.leaderboard {
+  max-width: 40em;
+  width: 100%; 
+}
+
+.leaderboard .record-row .rank {
+  font-family: var(--info-font);
+  width: 1.4em;
+}
+
+.leaderboard .record-row .name {
+  font-family: var(--title-font);
+  font-weight: 500;
+}
+
+.leaderboard .record-row .score-info {
+  font-family: var(--info-font);
+}
+
+
+.playable-emoji {
+  font-size: 8em;
+}

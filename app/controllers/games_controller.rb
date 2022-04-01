@@ -3,7 +3,7 @@ class GamesController < ApplicationController
   before_action :find_game, only: [ :show, :update, :add_name ]
 
   def index
-    @leaders = Game.ranked.limit(5)
+    @leaders = Game.ranked.limit(10)
   end
 
   def create
