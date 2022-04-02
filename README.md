@@ -1,9 +1,12 @@
 # Edible
 
-Smith College
-Am I Edible? [Example project]
+Smith College\
+Am I Edible?
 
 <img width="1000" alt="Edbile screens" src="https://user-images.githubusercontent.com/126442/161377732-7181ada1-8f3f-4d83-b78f-64d49a302401.png">
+
+## "Fun"ctional Example App
+Am I Edible is three screen interface that demonstrates core Ruby on Rails concepts in a compact application. You can play a live version at [amiedible.com](https://amiedible.com). Then, fork this repo and follow the instructions below to get it working on your local machine.
 
 ## Environment Configuration
 Follow the general steps in the next section to set up your local development environment from scratch. It is essential that you **consult a more detailed guide** that corresponds to your specific type of development machine. Use one of the guides listed below to help you complete the steps for setting up Edible on your machine.
