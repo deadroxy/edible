@@ -42,7 +42,7 @@
 .leaderboard {
   max-width: 24em;
   width: 100%;
-  margin-bottom: 4em;
+  margin-bottom: 0em;
 }
 
 .leaderboard-title {
@@ -139,6 +139,7 @@
   font-size: 1em;
 }
 
+
 /************************************/
 /*          Results Styles          */
 /************************************/
@@ -179,3 +180,28 @@ form#add-name input.text-field {
   text-align: center;
   margin-bottom: 0.5em;
 }
+
+a.cancel-link {
+  
+}
+
+
+/************************************/
+/*          Footer Styles           */
+/************************************/
+
+.footer {
+  font-family: var(--title-font);
+  font-size: 0.85em;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 25.4em;
+  width: 100%;
+}
+
+a.footer-link {
+  
+}
+
