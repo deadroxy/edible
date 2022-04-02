@@ -59,3 +59,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'mysql2'
 gem 'jquery-rails'
 gem 'dotenv-rails'
+
+# Adding gems to fix issue with Heroku deployment
+gem 'net-smtp', require: false
+gem 'net-pop', require: false
+gem 'net-imap', require: false
