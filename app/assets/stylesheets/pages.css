@@ -13,41 +13,13 @@
   margin-left: 1.4em;
 }
 
-.page-section .section-title {
-  font-family: var(--title-font);
-  font-weight: 500;
-  font-size: 2em;
-  margin-bottom: 1em;
-}
-
-.page-section .subsection-title {
-  font-family: var(--title-font);
-  font-weight: 500;
-  font-size: 1.2em;
-  margin-bottom: 0.5em;
-}
-
-.record-row {
-  padding: 0.5em 1.25em 0.5em 1.25em;
-  font-size: 0.85em;
-  line-height: 1.75em;
-}
-
-.record-row.even {
-  background: var(--medium-white-color);
-}
-
-.record-row.odd {
-  background: var(--dark-white-color);
-}
-
 
 /***********************************/
 /*         Responsiveness          */
 /***********************************/
 
 @media (max-width:48em) {
-  .page-section {
+/*  .page-section {
     margin-top: 3em;
   }
 
@@ -55,10 +27,10 @@
     font-size: 1.5em;
     margin-bottom: 0.6em;
   }
-  
+
   .page-section .subsection-title {
     font-size: 1.1em;
     margin-bottom: 0.5em;
-  }
+  }*/
   
 }

@@ -1,13 +1,89 @@
 /************************************/
-/*          Element Styles          */
+/*       Heading Text Styles        */
 /************************************/
 
 .intro-prompt {
-  font-size: 1em;
-  font-style: italic;
+  font-size: 0.9em;
   color: var(--gray-color);
-  margin-bottom: 2em;
+  margin-top: 1.5em;
+  margin-bottom: 3em;
+  max-width: 26.66em;
 }
+
+.screen-title {
+  font-family: var(--title-font);
+  font-weight: 500;
+  font-size: 2em;
+  text-align: center;
+}
+
+.game-subtitle {
+  font-family: var(--title-font);
+  font-weight: 500;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.game-round {
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+
+/************************************/
+/*        Leaderboard Styles        */
+/************************************/
+
+.leaderboard {
+  max-width: 24em;
+  width: 100%;
+  margin-bottom: 4em;
+}
+
+.leaderboard-title {
+  font-family: var(--title-font);
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.leaderboard .record-row {
+  padding: 0.5em 1.25em 0.5em 1.25em;
+  font-size: 0.85em;
+  line-height: 1.75em;
+}
+
+.leaderboard .record-row.even {
+  background: var(--medium-white-color);
+}
+
+.leaderboard .record-row.odd {
+  background: var(--dark-white-color);
+}
+
+.leaderboard .record-row .rank {
+  font-family: var(--info-font);
+  width: 1.4em;
+}
+
+.leaderboard .record-row .name {
+  font-family: var(--title-font);
+  font-weight: 500;
+}
+
+.leaderboard .record-row .score-duration {
+  font-family: var(--info-font);
+}
+
+
+/************************************/
+/*          Button Styles           */
+/************************************/
 
 .button {
   border: 5px solid var(--black-color);
@@ -22,7 +98,7 @@
   white-space: normal;
   text-align: center;
   line-height: 1.4em;
-  margin: 1em 1em 4em 1em;
+  margin: 1em 1em 1em 1em;
 }
 
 .button:hover {
@@ -50,29 +126,22 @@
 
 }
 
-.leaderboard {
-  max-width: 40em;
-  width: 100%;
-  margin-bottom: 4em;
-}
 
-.leaderboard .record-row .rank {
-  font-family: var(--info-font);
-  width: 1.4em;
-}
-
-.leaderboard .record-row .name {
-  font-family: var(--title-font);
-  font-weight: 500;
-}
-
-.leaderboard .record-row .score-duration {
-  font-family: var(--info-font);
-}
+/************************************/
+/*         Gameplay Styles          */
+/************************************/
 
 .playable-emoji {
   font-size: 8em;
 }
+
+.round-counter {
+  font-size: 1em;
+}
+
+/************************************/
+/*          Results Styles          */
+/************************************/
 
 .results .score {
   font-family: var(--title-font);
@@ -94,7 +163,7 @@ form#add-name label.text-field {
   line-height: 1.4em;
   text-align: center;
   margin-bottom: 2em;
-  max-width: 20em;
+  max-width: 18em;
 }
 
 form#add-name input.text-field {
@@ -106,7 +175,7 @@ form#add-name input.text-field {
   border: 5px solid var(--light-black-color);
   outline: none;
   padding: 0.8em 1em 0.7em 1em;
-  width: 13em;
+  width: 12em;
   text-align: center;
   margin-bottom: 0.5em;
 }

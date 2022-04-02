@@ -1,18 +1,23 @@
 <div class="page-section flexbox vertical stretch">
   <div class="section-inner flexbox vertical stretch">
-    <div class="section-title flexbox vertical center">
+    <div class="screen-title flexbox vertical center">
       Is it Edible?
     </div>
-    <div class="intro-prompt flexbox vertical center">
-      Here we give a quick description of how the game works.
+    <div class="game-subtitle flexbox vertical center">
+      🍇&nbsp;🧸&nbsp;🍄
     </div>
     <div class="flexbox vertical center">
       <form action="<%= games_path %>" method="POST" enctype="multipart/form-data" class="flexbox vertical start">
         <div style="hidden">
           <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
         </div>
-        <input id="game_start" name="commit" type="submit" class="button" value="Start" tabindex="1">
+        <input id="game_start" name="commit" type="submit" class="button" value="New Game" tabindex="1">
       </form>
+    </div>
+    <div class="flexbox vertical center">
+      <div class="intro-prompt">
+        <strong>How to Play:</strong> Decide whether each of the thirty emoji that appear can be eaten or not. Perfect your accuracy and speed to make it to the top of the leaderboard!
+      </div>
     </div>
     <%= render(partial: "games/leaderboard") %>
 	</div>
