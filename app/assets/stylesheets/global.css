@@ -34,6 +34,13 @@ body {
   background: var(--beige-color);
 }
 
+input {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 
 /************************************/
 /*       Universal Page Style       */
