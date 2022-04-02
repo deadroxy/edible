@@ -1,12 +1,11 @@
-# Edible
+# Am I Edible?
 
-Smith College\
-Am I Edible?
+A Ruby on Rails game that tests a player's emoji recognition skills.
 
 <img width="1000" alt="Edbile screens" src="https://user-images.githubusercontent.com/126442/161377732-7181ada1-8f3f-4d83-b78f-64d49a302401.png">
 
 ## "Fun"ctional Example App
-Am I Edible is three screen interface that demonstrates core Ruby on Rails concepts in a compact application. You can play a live version at [amiedible.com](https://amiedible.com). Then, fork this repo and follow the instructions below to get it working on your local machine.
+Am I Edible? is three screen interface that demonstrates core Ruby on Rails concepts in a compact application. You can play a live version at [amiedible.com](https://amiedible.com). Then, fork this repo and follow the instructions below to get it working on your local machine.
 
 ## Environment Configuration
 Follow the general steps in the next section to set up your local development environment from scratch. It is essential that you **consult a more detailed guide** that corresponds to your specific type of development machine. Use one of the guides listed below to help you complete the steps for setting up Edible on your machine.
@@ -78,4 +77,4 @@ MYSQL_SOCKET=/var/run/mysqld/mysqld.sock  # For Windows
 * Launch web server using `rackup` or `rails s`
 * If using `rackup` open http://localhost:9292 (or http://127.0.0.1:9292) in a browser
 * If using `rails s` open http://localhost:3000 (or http://127.0.0.1:3000) in a browser
-* You should see the Edible start page
+* You should see the Am I Edible? start page
