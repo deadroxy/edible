@@ -1,7 +1,7 @@
 # Edible
 
-Smith College CSC151: Programming Language Concepts\
-Starter App for Edible game project
+Smith College
+Am I Edible? [Example project]
 
 ## Environment Configuration
 Follow the general steps in the next section to set up your local development environment from scratch. It is essential that you **consult a more detailed guide** that corresponds to your specific type of development machine. Use one of the guides listed below to help you complete the steps for setting up Edible on your machine.
@@ -20,7 +20,7 @@ As you configure your environment you should **keep a log** where you **write do
 * Then create a local copy of your fork with:
 * `git clone https://github.com/<username>/edible.git`
 
-**2. Install MySQL 8 (on Mac)**
+**2a. Install MySQL 8 (on Mac)**
 * Download: https://dev.mysql.com/downloads/mysql
 * Be sure to select the version that corresponds to your operating system (Intel Mac = x86, M1 Mac = ARM)
 * Choose "Use Legacy Password Encryption" when installing
@@ -34,18 +34,18 @@ As you configure your environment you should **keep a log** where you **write do
 * Then apply it with `flush privileges;` followed by `exit;`
 * Try logging in with `mysql -u root -p` to confirm the password for the root user
 
-**3. Install Ruby 3.1.1**
+**3. Install Ruby 3.0.2**
 * Consult one of the guides linked in the previous section
 * Use [asdf](https://asdf-vm.com/guide/getting-started.html) on Mac/Linux systems
 * Use the [WSL](https://docs.microsoft.com/en-us/windows/wsl) on Windows systems
-* Make sure you are using Ruby 3.1.1 before proceeding:
+* Make sure you are using Ruby 3.0.2 before proceeding:
   * `cd edible` then `ruby -v` to check your version
 
 **4. Install essential gems**
 * Disable gem docs:
   * `echo "gem: --no-document" >> ~/.gemrc`
 * Install Rails 6.1.5:
-  * `gem install rails --version 6.1.5`
+  * `gem install rails --version 6.1.4`
 * Install MySQL gem:
   * `gem install mysql2`
   * Use the `-- --with-opt-dir="$(brew --prefix openssl@1.1)"` flag on M1 Macs
