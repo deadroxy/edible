@@ -5,10 +5,10 @@ A Ruby on Rails game that tests a player's emoji recognition skills.
 <img width="1000" alt="Edbile screens" src="https://user-images.githubusercontent.com/126442/161377732-7181ada1-8f3f-4d83-b78f-64d49a302401.png">
 
 ## Play the Game
-You can play Am I Edible? at [amiedible.com](https://amiedible.com).
+You can play Am I Edible? at [amiedible.com](http://amiedible.com).
 
 ## "Fun"ctional Example App
-Am I Edible? is three screen interface that demonstrates core Ruby on Rails concepts in a compact application. Check out the live version at [amiedible.com](https://amiedible.com). Then, fork this repo and follow the instructions below to get it working on your local machine so you can start exploring the code.
+Am I Edible? is three screen interface that demonstrates core Ruby on Rails concepts in a compact application. Check out the live version at [amiedible.com](http://amiedible.com). Then, fork this repo and follow the instructions below to get it working on your local machine so you can start exploring the code.
 
 <img width="600" alt="Edbile wireframes" src="https://user-images.githubusercontent.com/126442/161378219-4bbab01f-251a-4f88-977a-5b9e1608dc3b.jpg">
 
