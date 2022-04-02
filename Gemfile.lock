@@ -170,7 +170,6 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   jquery-rails
   listen (~> 3.3)
-  mail
   mysql2
   puma (~> 5.0)
   rails (~> 6.1.4)
