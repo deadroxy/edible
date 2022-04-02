@@ -89,6 +89,12 @@
   font-family: var(--info-font);
 }
 
+.leaderboard .empty {
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  background-color: var(--light-pink-color);
+}
+
 
 /************************************/
 /*          Button Styles           */
