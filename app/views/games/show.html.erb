@@ -1,10 +1,10 @@
 <div class="page-section flexbox vertical stretch">
-  <div class="section-inner flexbox vertical stretch">
+  <div class="section-inner flexbox vertical center">
+    <div class="game-round flexbox vertical center">
+      ROUND <%= params[:r].to_i+1 %>/30
+    </div>
     <div class="screen-title flexbox vertical center">
       Is it Edible?
-    </div>
-    <div class="game-round flexbox vertical center">
-      Round <%= params[:r].to_i+1 %>
     </div>
     <div class="playable-emoji flexbox vertical center">
       <%= @game.emojis[params[:r].to_i] %>
@@ -19,7 +19,7 @@
           <div style="display:none">
             <input name="game[response]" value="0">
           </div>  
-          <input id="game_play_no" name="commit" type="submit" class="button" value="Yuck" tabindex="1">
+          <input id="game_play_no" name="commit" type="submit" class="button" value="No" tabindex="1">
         </form>
         <form action="<%= game_path(@game, params: { r: params[:r]}) %>" method="POST" enctype="multipart/form-data" class="flexbox vertical start">
           <div style="hidden">
@@ -29,7 +29,7 @@
           <div style="display:none">
             <input name="game[response]" value="1">
           </div>
-          <input id="game_play_yes" name="commit" type="submit" class="button" value="Yum" tabindex="2">
+          <input id="game_play_yes" name="commit" type="submit" class="button" value="Yes" tabindex="2">
         </form>
       </div>
     </div>

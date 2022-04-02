@@ -30,8 +30,8 @@ body {
   min-height: 100%;
   font-family: var(--body-font);
   font-weight: 400;
-  color: var(--black-color);
-  background: var(--white-color);
+  color: var(--brown-color);
+  background: var(--beige-color);
 }
 
 

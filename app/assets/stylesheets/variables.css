@@ -3,11 +3,16 @@
   --body-font:              'Rubik', 'Arial';
   --info-font:              'Inconsolata', 'Arial';
 
-  --black-color:            #160919;
-  --light-black-color:      #2E2230;
-  --gray-color:             #84848C;
-  --light-gray-color:       #D0CED1;
-  --dark-white-color:       #F3F2F3;
-  --medium-white-color:     #FDFCFD;
-  --white-color:            #FFFFFF;
+  --brown-color: #6D4B38;
+  --light-brown-color: #896E66;
+  
+  --beige-color: #F2E6CC;
+  --light-pink-color: #E5B9AA;
+  --lightest-pink-color: #E8CDBA;
+  
+  --green-color: #53C156; 
+  --red-color: #E84F4F;
+  
+  --orange-color: #FF884D;
+  --light-orange-color: #FFB9A4;
 }

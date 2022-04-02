@@ -2,14 +2,6 @@
 /*       Heading Text Styles        */
 /************************************/
 
-.intro-prompt {
-  font-size: 0.9em;
-  color: var(--gray-color);
-  margin-top: 1.5em;
-  margin-bottom: 3em;
-  max-width: 26.66em;
-}
-
 .screen-title {
   font-family: var(--title-font);
   font-weight: 500;
@@ -17,7 +9,7 @@
   text-align: center;
 }
 
-.game-subtitle {
+.intro-emoji {
   font-family: var(--title-font);
   font-weight: 500;
   font-size: 2em;
@@ -25,13 +17,27 @@
   text-align: center;
 }
 
+.intro-prompt {
+  font-size: 0.9em;
+  margin-top: 1.5em;
+  margin-bottom: 3em;
+  max-width: 26.66em;
+  line-height: 1.3em;
+}
+
 .game-round {
-  font-family: var(--title-font);
-  font-weight: 400;
-  font-size: 1.1em;
-  margin-top: 0.5em;
+  font-family: var(--info-font);
+  font-size: 0.9em;
+  font-weight: 700;
   margin-bottom: 0.5em;
   text-align: center;
+  border: 2px solid var(--light-brown-color);
+  color: var(--light-brown-color);
+  padding: 0.1em 0.4em 0.1em 0.4em;
+}
+
+.playable-emoji {
+  font-size: 8em;
 }
 
 
@@ -49,7 +55,10 @@
   font-family: var(--title-font);
   font-weight: 500;
   font-size: 1.2em;
-  margin-bottom: 0.5em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  background-color: var(--brown-color);
+  color: var(--beige-color);
 }
 
 .leaderboard .record-row {
@@ -59,11 +68,11 @@
 }
 
 .leaderboard .record-row.even {
-  background: var(--medium-white-color);
+  background: var(--lightest-pink-color);
 }
 
 .leaderboard .record-row.odd {
-  background: var(--dark-white-color);
+  background: var(--light-pink-color);
 }
 
 .leaderboard .record-row .rank {
@@ -86,9 +95,9 @@
 /************************************/
 
 .button {
-  border: 5px solid var(--black-color);
-  background-color: var(--light-black-color);
-  color: var(--white-color);
+  border: 5px solid var(--brown-color);
+  background-color: var(--brown-color);
+  color: var(--beige-color);
   font-family: var(--title-font);
   font-weight: 500;
   font-size: 1.6em;
@@ -101,42 +110,34 @@
   margin: 1em 1em 1em 1em;
 }
 
-.button:hover {
-  cursor: pointer;
-  border: 5px solid var(--light-black-color);
-  background-color: var(--gray-color);
-}
-
-.button:active {
-  cursor: pointer;
-  border: 5px solid var(--gray-color);
-  background-color: var(--light-gray-color);
-  outline: none;
-}
-
 #game_play_yes.button {
-  width: 5em;
+  border: 5px solid var(--green-color);
+  background-color: var(--green-color);
+  width: 4em;
 }
 
 #game_play_no.button {
-  width: 5em;
+  border: 5px solid var(--red-color);
+  background-color: var(--red-color);
+  width: 4em;
 }
 
-#game_start.button {
-
+.button:hover,
+#game_play_yes.button:hover,
+#game_play_no.button:hover {
+  cursor: pointer;
+  border: 5px solid var(--orange-color);
+  background-color: var(--orange-color);
 }
 
-
-/************************************/
-/*         Gameplay Styles          */
-/************************************/
-
-.playable-emoji {
-  font-size: 8em;
-}
-
-.round-counter {
-  font-size: 1em;
+.button:active,
+#game_play_yes.button:active,
+#game_play_no.button:active {
+  cursor: pointer;
+  border: 5px solid var(--light-orange-color);
+  background-color: var(--light-orange-color);
+  color: var(--orange-color);
+  outline: none;
 }
 
 
@@ -153,7 +154,8 @@
 .results .duration {
   font-family: var(--info-font);
   font-size: 1em;
-  color: var(--gray-color);
+  font-weight: 700;
+  color: var(--light-brown-color);
 }
 
 form#add-name {
@@ -168,12 +170,12 @@ form#add-name label.text-field {
 }
 
 form#add-name input.text-field {
-  color: var(--black-color);
-  background: var(--white-color);
+  color: var(--brown-color);
+  background: var(--lightest-pink-color);
   font-family: var(--body-font);
   font-weight: 400;
   font-size: 1.3em;
-  border: 5px solid var(--light-black-color);
+  border: 5px solid var(--brown-color);
   outline: none;
   padding: 0.8em 1em 0.7em 1em;
   width: 12em;
@@ -181,8 +183,24 @@ form#add-name input.text-field {
   margin-bottom: 0.5em;
 }
 
-a.cancel-link {
-  
+
+/************************************/
+/*           Link Styles            */
+/************************************/
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--orange-color);
+}
+
+a:active {
+  cursor: pointer;
+  color: var(--light-orange-color);
 }
 
 
@@ -199,9 +217,5 @@ a.cancel-link {
   margin-bottom: 2em;
   max-width: 25.4em;
   width: 100%;
-}
-
-a.footer-link {
-  
 }
 
