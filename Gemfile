@@ -59,3 +59,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'mysql2'
 gem 'jquery-rails'
 gem 'dotenv-rails'
+
+# Added to fix error when deploying to Heroku
+gem 'mail'
