@@ -31,10 +31,15 @@ class GamesController < ApplicationController
   
   def update
     # Stop timer if it's the final response
+    # TODO: This is causing a bug when someone wails on the yes/no buttons
+    # The r param is not properly updated and not all responses are being recorded...
+    # Need to address this issue
     if params[:r].to_i == 29
       @game.finished_at = Time.now
     end
     
+    # TODO: the issue seems to lie with the fact that multiple patch requests can be fired off,
+    # we need to prevent that and to store our answers more intelligently
     # Record response to current round
     unless game_params[:response].nil?
       @game.responses << game_params[:response]
